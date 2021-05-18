@@ -1,0 +1,313 @@
+/*    ---------------------------   GLOBAL   ---------------------------    */
+* {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none !important;
+  outline: none;
+}
+
+@font-face {
+  font-family: VarelaRound;
+  src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+  font-family: VarelaRound;
+}
+
+/*    ---------------------------   END==>GLOBAL   ---------------------------    */
+body {
+  background-color: white;
+}
+/*    ---------------------------   HEADER   ---------------------------    */
+.my-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../img/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.my-header::before {
+  content: "";
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 8) 4%,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/*navigation*/
+.x {
+  background-color: #54a39f !important;
+}
+.my-navbar {
+  height: 4.4rem;
+  z-index: 5500;
+}
+.my-navbar > button {
+  border: 1px solid #569e99 !important;
+}
+.my-navbar > button span {
+  color: #569e99;
+}
+.my-navbar > button i {
+  color: #569e99;
+}
+/* @media screen and (min-width: 992px) {
+  .my-navbar {
+    background-color: transparent;
+  }
+} */
+@media screen and (min-width: 200px) and (max-width: 992px) {
+  .my-navbar {
+    background-color: white;
+  }
+}
+/*banner*/
+.banner {
+  z-index: 5000 !important;
+}
+.banner h1 {
+  font-size: 3rem;
+  background: rgb(48, 48, 48);
+  background-image: linear-gradient(
+    0deg,
+    rgba(48, 48, 48, 1) 0%,
+    rgba(62, 62, 62, 1) 1%,
+    rgba(119, 119, 119, 1) 23%,
+    rgba(155, 155, 155, 1) 47%,
+    rgba(170, 170, 170, 1) 59%,
+    rgba(179, 179, 179, 1) 63%,
+    rgba(183, 183, 183, 1) 65%,
+    rgba(187, 187, 187, 1) 67%,
+    rgba(195, 195, 195, 1) 71%,
+    rgba(199, 199, 199, 1) 73%,
+    rgba(206, 206, 206, 1) 76%,
+    rgba(212, 212, 212, 1) 79%,
+    rgba(220, 220, 220, 1) 83%,
+    rgba(226, 226, 226, 1) 86%,
+    rgba(230, 230, 230, 1) 88%,
+    rgba(232, 232, 232, 1) 90%,
+    rgba(236, 236, 236, 1) 95%,
+    rgba(242, 242, 242, 1) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.banner p {
+  color: rgb(199, 199, 199);
+}
+.banner button {
+  background-color: #569e99;
+  border-color: #569e99;
+}
+.banner button:hover {
+  background-color: rgb(84, 139, 135);
+  border-color: rgb(84, 139, 135);
+}
+@media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner h1 {
+    font-size: 8rem;
+  }
+}
+
+/*    ---------------------------   END==>HEADER   ---------------------------    */
+
+/*    ---------------------------   DESCRIPTION   ---------------------------    */
+
+.des-container {
+  background: rgb(46, 46, 46);
+  background: linear-gradient(
+    0deg,
+    rgba(46, 46, 46, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+/*    ---------------------------   END==>DESCRIPTION   ---------------------------    */
+/*    ---------------------------   MAIN   ---------------------------    */
+
+/* =====     FIRST SECTION     ===== */
+
+@media screen and (min-width: 992px) {
+  .first-section > .content-container {
+    border-left: 10px solid #64a19d;
+  }
+}
+/* =====     SECOND SECTION     ===== */
+
+.second-section > .first-content {
+  background-color: black;
+}
+.second-section > .second-content {
+  background-color: black;
+}
+@media screen and (min-width: 992px) {
+  .border {
+    width: 120px !important;
+    border-bottom: 3px solid #4aa8a4 !important;
+  }
+}
+/*    ---------------------------   END==>MAIN   ---------------------------    */
+/*    ---------------------------  CONTACT  ---------------------------    */
+.my-contact {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/bg-signup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.my-contact::before {
+  content: "";
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 8) 3%,
+    rgba(0, 0, 0, 0.6) 10%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.input-container,
+.text-container {
+  z-index: 5000;
+}
+.text-container {
+  font-size: 2rem;
+}
+.input-container button {
+  background-color: #569e99;
+  border-color: #569e99;
+}
+.input-container button:hover {
+  background-color: rgb(84, 139, 135);
+  border-color: rgb(84, 139, 135);
+}
+@media screen and (min-width: 576px) {
+  .input-container input {
+    width: 26rem !important;
+  }
+  .input-container button {
+    width: 8.5rem !important;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 576px) {
+  .input-container input {
+    min-width: 15rem !important;
+    width: 20rem;
+  }
+  .input-container button {
+    width: 8.5rem !important;
+  }
+}
+/*    ---------------------------   END==CONTACT  ---------------------------    */
+.about-me {
+  background-color: black;
+  padding: 10px !important;
+}
+.card {
+  border-bottom: 4px solid #54a39f;
+  margin: 0 0.6rem !important;
+}
+.card i {
+  font-size: 1.2rem;
+  color: #54a39f !important;
+}
+.card h4 {
+  font-size: 0.9rem;
+}
+
+hr {
+  width: 80px !important;
+  margin: 0 auto !important;
+  border: 3px solid #54a39f !important;
+}
+@media screen and (min-width: 992px) {
+  .about-me {
+    padding: 0 5rem !important;
+  }
+}
+.social {
+  background-color: black;
+  padding: 5rem 0 !important;
+}
+
+.social a {
+  background-color: #1a1a1a;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.social i {
+  color: rgb(168, 168, 168);
+}
+
+.footer {
+  background-color: black;
+  padding: 3rem !important;
+}
